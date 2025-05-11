@@ -1,3 +1,14 @@
+
+
+/*
+if (str.matches("-?\\d+") {
+    int val = Integer.parseInt(str);
+    //..
+} else {
+    // format error
+
+ */
+
 public class ValueOfDemo {
     public static void main(String[] args) {
 
@@ -18,3 +29,4 @@ public class ValueOfDemo {
         }
     }
 }
+
