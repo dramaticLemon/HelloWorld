@@ -3,7 +3,8 @@ import some.packadge.counter.Counter;
 public class App {
 
     public static void main(String[] args) {
-        System.out.println(joinNumbersFromRange(1,5));
+        String str = "Tumut";
+        System.out.println(isPalindrome(str));
     }
 
     public static boolean greaterThan(String str1, String str2) {
@@ -131,6 +132,19 @@ public class App {
         }
         return sb.toString();
     }
+
+    public static boolean isPalindrome(String str) {
+        String normalizeStr = str.toLowerCase();
+       int left = 0;
+       int right = normalizeStr.length() -  1;
+       while (left < right) {
+           if (normalizeStr.charAt(left++) != normalizeStr.charAt(right--)) {
+               return false;
+           }
+       }
+        return true;
+    }
+
 
 }
 
